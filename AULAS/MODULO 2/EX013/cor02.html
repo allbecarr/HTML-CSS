@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS3</title>
+
+    <style>
+        div{
+            width: 300px;
+            height: 150px;
+        }
+
+        div#instagram{
+            background-image: linear-gradient(120deg,#515BCE 10%,#B836A0,#ED4B62,#FFC85A 80%);
+        }
+        div#roxo{
+            background-image: linear-gradient(-120deg, #303EBD,#A320C9,#632AD4,#2A83D4,#22C1C9);
+        }
+        div#solaris{
+            background-image: linear-gradient(to bottom, #FAB914, #DE8312, #F56720, #DE2912, #FF146D);
+        }
+        div#boreau{
+            background-image: linear-gradient(to top, #407EF6,#3796D4,#49D5EB,#37D4BE,#40F6A9);
+        }
+        div#gray{
+            background-image: linear-gradient(to right, rgb(90, 89, 89) 20%,rgb(213, 213, 213));
+        }
+        div#blue{
+            background-image: linear-gradient(to left,rgb(61, 61, 255),rgb(109, 177, 255));
+        }
+        div#mimosDaIvi{
+            background-image: radial-gradient(circle,#EE7CF6,#6A52C2);
+        }
+    </style>
+ </head>
+ <body>
+    <h1>Testando Gradiente</h1>
+    <div id="instagram"></div>
+    <div id="roxo"></div>
+    <div id="solaris"></div>
+    <div id="boreau"></div>
+    <div id="gray"></div>
+    <div id="blue"></div>
+    <div id="mimosDaIvi"></div>
+
+ </body>
+ </html>

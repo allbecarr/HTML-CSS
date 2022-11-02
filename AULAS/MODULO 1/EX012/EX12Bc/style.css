@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*Regra para compatibilidade de linguagem - acentuação*/
+body{
+    background-color: rgb(180, 224, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+h1{
+    color: mediumblue;
+    font-size: 1.6em;
+    background-color: rgb(2, 211, 219);
+}
+h2{
+    color: brown;
+    font-size: 1.3em;
+}
+p{
+    text-align: justify;
+}
+p#call{
+    font-family: Gilroy;
+}
