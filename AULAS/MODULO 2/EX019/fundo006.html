@@ -7,9 +7,40 @@
     <title>Dimencionamento</title>
 </head>
 <style>
-    
+    .container{
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        display: inline-block;
+        background-image: url('imagens/wallpaper002.jpg');
+        border-radius: 10px;
+        
+    }
+    #q1{
+        background-size: auto;/* padrão */
+    }
+/*#q2{
+        background-size: 100%;
+    }*/
+    #q2{
+        background-size: 300px 200px;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #q3{
+        background-size: cover;        
+    }
+    #q4{
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        
+    }
 </style>
 <body>
-    
+    <div class="container" id="q1"></div>
+    <div class="container" id="q2"></div>
+    <div class="container" id="q3"></div>
+    <div class="container" id="q4"></div>
 </body>
 </html>
