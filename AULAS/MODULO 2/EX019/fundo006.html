@@ -8,18 +8,43 @@
 </head>
 <style>
     .container{
+        display: inline-block;
+        width: 220px;
+        margin: 15px;
+        padding: 10px 5px 10px 5px;
+        background-color: white;
+        box-shadow: 0px 5px 10px #80808080;
+        border-radius: 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+    
+
+    .container > h3{
+        margin: 0px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .container > p{
+            margin: 0px;
+            padding: 0px 10px 10px 10px;
+    }
+
+    .quadro{
         width: 200px;
         height: 200px;
-        margin: 10px;
-        display: inline-block;
+        margin: auto;
         background-image: url('imagens/wallpaper002.jpg');
         border-radius: 10px;
         
     }
     #q1{
         background-size: auto;/* padrão */
+        background-position: center center;
     }
-/*#q2{
+        /*#q2{
         background-size: 100%;
     }*/
     #q2{
@@ -38,9 +63,33 @@
     }
 </style>
 <body>
-    <div class="container" id="q1"></div>
-    <div class="container" id="q2"></div>
-    <div class="container" id="q3"></div>
-    <div class="container" id="q4"></div>
+    <div class="container">
+        <div class="quadro" id="q1"></div>
+        <h3>Auto</h3>
+        <p>
+            (padrão) a imagem de fundo será aplicada em seu tamanho original.
+        </p>
+    </div>
+    <div class="container">
+        <div class="quadro" id="q2"></div>
+        <h3>tam px ou tam %</h3>
+        <p>
+            Redimensiona a largura da imagem e faz a altura se adaptar automaticamente. Podemos também informar as duas dimensões na sequência ou também usar valores percentuais.
+        </p>
+    </div>
+    <div class="container">
+        <div class="quadro" id="q3"></div>
+        <h3>Cover</h3>
+        <p>
+            Muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela,sem nenhum corte.
+        </p>
+    </div>
+    <div class="container">
+        <div class="quadro" id="q4"></div>
+        <h3>Contain</h3>
+        <p>
+            Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.
+        </p>
+    </div>
 </body>
 </html>
