@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dimencionamento</title>
+    <title>Fundo Fixo de Tela</title>
 </head>
 <style>
     body{
         height: 100vh;
+        /*
         background-color: black;
         background-image: url('imagens/wallpaper002.jpg');
         background-position: center center;
-        background-repeat: repeat-y;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        */
+
+        /*
+        Shorthand - background
+        color > image > position > repeat > [size*]attachment
+        hoje o 'size' ainda não funciona nos navegadores, embora a regra no W3C diga que sim.
+        */
+        background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
         background-size: cover;
     }
     main{
         margin: auto;
-        background-color: white;
-        width: 400px;
+        background-color: rgba(255, 255, 255, 0.9);
+        max-width: 500px;
         padding: 20px;
         border: 2px solid blue;
         border-radius: 10px;
