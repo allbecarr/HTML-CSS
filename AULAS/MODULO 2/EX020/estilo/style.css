@@ -6,10 +6,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 /* font-family: 'Sriracha', cursive;  */
 
+@font-face {
+    font-family: 'Cordel';
+    src: url('../font/Cordel Encarnado II.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root{
     --font1:Verdana, Geneva, Tahoma, sans-serif;
     --font2:'Passion One', cursive; 
     --font3:'Sriracha', cursive; 
+    --font4:'Cordel',sans-serif;
 }
 
 *{
@@ -31,7 +39,7 @@ header{
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
-    font-family:var(--font2);
+    font-family:var(--font4);
     font-size: 10vw;
 }
 
