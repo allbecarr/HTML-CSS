@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Select, datalist e textarea</title>
+</head>
+<body>
+    <h1>
+        Capítulo 24 Aula 10 – Select, datalist e textarea em HTML
+    </h1>
+
+    <main>
+        <h2>Escolha Algumas Opções</h2>
+        <form action="cadastro.php" method="POST" autocomplete="on">
+
+            <p>
+                <label for="iest">Estado:</label>
+                <select class="box" name="estado" id="iest">
+                    <option value="" selected>---Escolha---</option>
+                    <optgroup label="Região Sudeste">
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="PN">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste">
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="GO">Goiás</option>
+                        <option value="DF">Brasília</option>
+                    </optgroup>
+                    <optgroup label="Região Norte">
+                        <option value="AM">Amazonas</option>
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="PA">Pará</option>
+                        <option value="RD">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+                </select>
+            </p>
+
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input class="box" type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option>Adminstrador</option>
+                    <option>Professor</option>
+                    <option>Programador</option>
+                    <option>Advogado</option>
+                    <option>Bancário</option>
+                    <option>Assistente Social</option>
+                    <option>Destista</option>
+                    <option>Médico</option>
+                    <option>Contador</option>
+                </datalist>  
+            </p>
+            <p>
+                <label for="imsg">Mansagem:</label><br><br>
+                <textarea name="msg" id="imsg" cols="50" rows="10" placeholder="Deixe sua mensagem aqui..." style="resize: none;"></textarea>
+            </p>
+            
+            </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+      
+        </form>
+    </main>
+    
+</body>
+</html>
