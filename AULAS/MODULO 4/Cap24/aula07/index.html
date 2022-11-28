@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Telefone e e-mail</title>
+</head>
+<body>
+    <h1>
+        Capítulo 24 Aula 07 – Formulários com telefone e e-mail
+    </h1>
+
+    <main>
+        <h2>Cadastro do Cliente</h2>
+        <form action="cadastro.php" method="GET" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input class="box" type="text" name="nome" id="inome" required minlength="10" maxlength="30" size="30" placeholder="Nome completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input class="box" type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                    <!-- Estudar sobre as RegEx - Expressões Regulares -->
+                </p>
+                <p>
+                    <label for="iemail">e-mail:</label>
+                    <input class="box" type="email" name="email" id="iemail" required autocomplete="email" placeholder="xxxxx@xxxxxxxx">
+                </p>
+                </p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>
+    </main>
+    
+</body>
+</html>
