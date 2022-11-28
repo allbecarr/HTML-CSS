@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkbox e Radio button</title>
+</head>
+<body>
+    <h1>
+        Capítulo 24 Aula 08 – Checkbox e Radio button em HTML
+    </h1>
+
+    <main>
+        <h2>Cadastro do Cliente</h2>
+        <form action="cadastro.php" method="GET" autocomplete="on">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="inome">Nome:</label>
+                    <input class="box" type="text" name="nome" id="inome" required minlength="10" maxlength="30" size="30" placeholder="Nome completo" autocomplete="name">
+                </p>
+                <p>
+                    <label for="itel">Telefone:</label>
+                    <input class="box" type="tel" name="tel" id="itel" required autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx">
+                    <!-- Estudar sobre as RegEx - Expressões Regulares -->
+                </p>
+                <p>
+                    <label for="iemail">e-mail:</label>
+                    <input class="box" type="email" name="email" id="iemail" required autocomplete="email" placeholder="xxxxx@xxxxxxxx">
+                </p>
+                    <fieldset>
+                        <legend>Sexo</legend>
+                        <input type="radio" name="sexo" id="imasc" value="Masc" checked><label for="imasc">Masculino</label><br>
+                        <input type="radio" name="sexo" id="ifem" value="Fem"><label for="ifem">Feminino</label><br>
+                        <input type="radio" name="sexo" id="ininfo" value="NaoInfo"><label for="ininfo">Não informar</label>
+                    </fieldset>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Esportes Favoritos</legend>
+                <input type="checkbox" name="fut" id="ifut" checked><label for="ifut">Futebol</label><br>
+                <input type="checkbox" name="basq" id="ibasq"><label for="ibasq">Basquete</label><br>
+                <input type="checkbox" name="nat" id="inat"><label for="inat">Natação</label><br>
+                <input type="checkbox" name="vol" id="ivol"><label for="ivol">Volei</label><br>
+                <input type="checkbox" name="hand" id="ihand"><label for="ihand">Handebol</label><br>
+                <input type="checkbox" name="ten" id="iten"><label for="iten">Tênis</label><br>
+                <input type="checkbox" name="cicl" id="icicl"><label for="icicl">Ciclistmo</label><br>
+            </fieldset>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </main>
+    
+</body>
+</html>
