@@ -13,12 +13,12 @@ Grandes Telas: acima de 1200px
 */
 
 @media print{/*MODELO PARA IMPRESSÃO*/
-    menu{
-        display: none;
+   body{
+        font-family: 'Courier New', Courier, monospace;
     }
 
-    body{
-        font-family: 'Courier New', Courier, monospace;
+    menu{
+        display: none;
     }
 }
 /*
