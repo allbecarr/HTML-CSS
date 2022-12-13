@@ -9,22 +9,23 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Menu Responsivo</title>
 </head>
-<header>
-    <h1>Meu Site</h1>
-    <span id="menu-icon" class="material-symbols-outlined" onclick="clickMenu()">
-        menu
-    </span>
-    <menu id="itens">
-        <ul>
-            <li><a href="#">Opção 1</a></li>
-            <li><a href="#">Opção 2</a></li>
-            <li><a href="#">Opção 3</a></li>
-            <li><a href="#">Opção 4</a></li>
-            <li><a href="#">Opção 5</a></li>
-        </ul>
-    </menu>
-</header>
-<body>
+
+<body onresize="mudarTamanho()">
+    <header>
+        <h1>Meu Site</h1>
+        <span id="menu-icon" class="material-symbols-outlined" onclick="clickMenu()">
+            menu
+        </span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
     <main>
         <h1>Capítulo 25 Aula 09 - Menu responsivo com HTML5 e CSS3</h1>
         <article>
@@ -47,6 +48,14 @@
                 itens.style.display = 'none'
             }else{
                 itens.style.display = 'block'
+            }
+        }
+
+        function mudarTamanho() {
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
             }
         }
     </script>
